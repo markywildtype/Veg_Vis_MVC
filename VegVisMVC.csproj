@@ -20,5 +20,15 @@
     <Content Remove="Views\Shared\London.cshtml" />
     <Content Remove="wwwroot\css\site.css" />
     <Content Remove="wwwroot\css\site.min.css" />
+    <Content Remove="Views\Regions\Index.cshtml" />
+    <Content Remove="Views\Regions\Heart.cshtml" />
+    <Content Remove="Views\Regions\London.cshtml" />
+    <Content Remove="Views\Regions\SouthSouthEast.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Regions\Wales.cshtml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\VegVis\" />
   </ItemGroup>
 </Project>

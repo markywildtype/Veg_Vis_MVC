@@ -12,86 +12,81 @@
   <link rel="stylesheet" href="~/css/nav.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Satisfy|Merriweather+Sans" rel="stylesheet">
-  <link rel="icon" href="vv_logo.png">
+  <link rel="icon" href="~/images/vv_logo.png">
   <title>Vegetarian Visitor 2018</title>
 </head>
 <body>
-   
-   
-   
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007018; font-family: Merriweather Sans, sans-serif;">
-    <a class="navbar-brand" href="@Url.Action("Index", "/")"><div id="logo-name">
-      <div><img id="logo-full" src="~/images/vv_logo.png" alt="Vegetarian Visitor"></div>
-          <div id="site-name">
-            <div class="">
-              <p id="veg">Vegetarian</p>
+
+
+
+    @*<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007018; font-family: Merriweather Sans, sans-serif;">*@
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003100; font-family: Merriweather Sans, sans-serif;">
+        <a class="navbar-brand" href="@Url.Action("Index", "/")">
+            <div id="logo-name">
+                <div><img id="logo-full" src="~/images/vv_logo.png" alt="Vegetarian Visitor"></div>
+                <div id="site-name">
+                    <div class="">
+                        <p id="veg">Vegetarian</p>
+                    </div>
+                    <div class="">
+                        <p id="vis">&nbsp; &nbsp; &nbsp; &nbsp;Visitor</p>
+                    </div>
+                </div>
             </div>
-            <div class="">
-              <p id="vis">&nbsp; &nbsp; &nbsp; &nbsp;Visitor</p>
-            </div>
-           </div>
-      </div>
-    </a>
+        </a>
 
-    <!-- Toggle button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Navbar content that will be hidden on smaller screens -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+        <!-- Navbar content that will be hidden on smaller screens -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
 
-        <!-- Nav item with dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            England
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <p class="dropdown-item">@Html.ActionLink("London", "London")</p>
-              <p class="dropdown-item">@Html.ActionLink("South and South East", "SouthSouthEast")</p>
+                <!-- Nav item with dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        England
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="@Url.Action("London", "/VegVis")">London</a>
+                        <a class="dropdown-item" href="@Url.Action("SouthSouthEast", "/VegVis")">South and South East</a>
+                        <a class="dropdown-item" href="@Url.Action("SouthWest", "/VegVis")">South West</a>
+                        <a class="dropdown-item" href="@Url.Action("ThamesChilt", "/VegVis")">Thames and Chilterns</a>
+                        <a class="dropdown-item" href="@Url.Action("EastAnglia", "/VegVis")">East Anglia</a>
+                        <a class="dropdown-item" href="@Url.Action("EastMidlands", "/VegVis")">East Midlands</a>
+                        <a class="dropdown-item" href="@Url.Action("Heart", "/VegVis")">Heart of England</a>
+                        <a class="dropdown-item" href="@Url.Action("NorthEast", "/VegVis")">North East</a>
+                        <a class="dropdown-item" href="@Url.Action("NorthWest", "/VegVis")">North West</a>
+                    </div>
+                </li>
 
-              <a class="dropdown-item" href="#">South and South East</a>
-              <a class="dropdown-item" href="#">South West</a>
-              <a class="dropdown-item" href="#">Thames and Chilterns</a>
-              <a class="dropdown-item" href="#">East Anglia</a>
-              <a class="dropdown-item" href="#">East Midlands</a>
-              <a class="dropdown-item" href="#">Heart of England</a>
-              <p class="dropdown-item">@Html.ActionLink("Heart of England", "Heart")</p>
 
-              <a class="dropdown-item" href="#">North East</a>
-              <a class="dropdown-item" href="#">North West</a>
-          </div>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Scotland", "/VegVis")">Scotland</a>
+                </li>
 
-        <!-- Nav item marked as active -->
-        <!-- <li class="nav-item active"> -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">Scotland <span class="sr-only">(current)</span></a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Wales", "/VegVis")">Wales</a>
+                </li>
 
-        <!-- Standard nav items -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">Wales</a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Offers", "/VegVis")">Offers</a>
+                </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Offers</a>
-        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Contact", "/VegVis")">Contact</a>
+                </li>
+            </ul>
 
-        <!-- Nav item marked as disabled -->
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Contact</a>
-        </li>
-      </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
 
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-
-  </nav>
+    </nav>
 
 
 

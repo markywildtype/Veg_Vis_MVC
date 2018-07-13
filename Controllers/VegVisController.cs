@@ -31,6 +31,10 @@ namespace VegVisMVC.Controllers
             return View();
         }
 
+        public IActionResult Wales()
+        {
+            return View();
+        }
 
         public IActionResult Contact()
         {
