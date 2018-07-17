@@ -15,6 +15,7 @@
   <ItemGroup>
     <None Remove="public\css\main.css" />
     <None Remove="public\images\vv_logo.png" />
+    <None Remove="public\css\nav.css" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Shared\London.cshtml" />
@@ -24,11 +25,25 @@
     <Content Remove="Views\Regions\Heart.cshtml" />
     <Content Remove="Views\Regions\London.cshtml" />
     <Content Remove="Views\Regions\SouthSouthEast.cshtml" />
+    <Content Remove="wwwroot\images\london\london.jpg" />
+    <Content Remove="wwwroot\images\london\manna.jpg" />
+    <Content Remove="wwwroot\images\london\one_fanthorpe.jpg" />
+    <Content Remove="wwwroot\images\london\roseview_hotel.jpg" />
+    <Content Remove="wwwroot\images\london\temple_lodge.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\Regions\Wales.cshtml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\VegVis\" />
+    <Folder Include="wwwroot\images\london\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\london\london.jpg" />
+    <None Include="wwwroot\images\london\manna.jpg" />
+    <None Include="wwwroot\images\london\one_fanthorpe.jpg" />
+    <None Include="wwwroot\images\london\roseview_hotel.jpg" />
+    <None Include="wwwroot\images\london\temple_lodge.jpg" />
   </ItemGroup>
 </Project>

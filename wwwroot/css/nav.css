@@ -27,6 +27,10 @@
   color: white;
 }
 
+nav {
+    z-index: 2;
+}
+
 /* Overriden Navbar styling */
 .navbar.navbar-expand-lg.navbar-dark {
   position: fixed;

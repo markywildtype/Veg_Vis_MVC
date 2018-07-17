@@ -8,8 +8,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 
-  <link rel="stylesheet" href="~/css/main.css">
-  <link rel="stylesheet" href="~/css/nav.css">
+  <link rel="stylesheet" href="~/css/main.css?version=1">
+  <link rel="stylesheet" href="~/css/nav.css?version=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Satisfy|Merriweather+Sans" rel="stylesheet">
   <link rel="icon" href="~/images/vv_logo.png">
@@ -19,7 +19,6 @@
 
 
 
-    @*<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007018; font-family: Merriweather Sans, sans-serif;">*@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003100; font-family: Merriweather Sans, sans-serif;">
         <a class="navbar-brand" href="@Url.Action("Index", "/")">
             <div id="logo-name">
@@ -92,11 +91,27 @@
 
 
     <div class="container body-content">
+
+        @*<div class="btn-group btn-group-toggle" id="selector" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="All" id="option1" autocomplete="off" checked> All
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="Accommodation" id="option2" autocomplete="off"> Accommodation
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="Eating" id="option3" autocomplete="off"> Eating
+            </label>
+        </div>*@
+
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - Vegetarian Visitor</p>
-        </footer>
+
+        <section id="footer">
+            <footer>
+                <hr />
+                <p>&copy; Annemarie Weitzel 2000 - 2018, All rights reserved.</p>
+            </footer>
+        </section>
     </div>
 
 

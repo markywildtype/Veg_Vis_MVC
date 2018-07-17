@@ -5,13 +5,82 @@
 
 body {
     background-color: #002900 !important;
+    background: url("../images/veg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section div label .btn.btn-secondary {
+    background-color: beige;
+    color: salmon;
+    padding-top: 120px;
+    margin: auto;
 }
 
 section {
-  color: #fffdd0;
-  font-family: "Merriweather Sans", sans-serif;
-  padding-top: 120px;
-  margin-left: 5%;
-  margin-right: 5%;
+    background-color: rgba(0, 41, 0, 0.95);
+    width: 98%;
+    color: #fffdd0;
+    padding: 2%;
+    margin: auto;
+    font-family: "Merriweather Sans", sans-serif;
+    text-justify: newspaper;
+    padding-top: 120px;
+    z-index: 0;
 }
 
+section h2 {
+    color: lightgreen;
+    margin-bottom: 3%;
+}
+
+section a {
+    color: #89fc2a;
+}
+
+section a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.entry {
+    margin-bottom: 5%;
+}
+
+.multi-line-entry {
+    padding-left: 2%;
+}
+
+.description {
+    font-size: 0.8em;
+}
+
+.accom-photo {
+    width: 100%;
+    max-width: 483px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.restaurant-photo {
+    width:100%;
+    max-width: 633px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.region-photo {
+    width: 100%;
+    max-width: 311px;
+    float: left;
+    margin: 1% 3% 3% 0%;
+
+}
+
+#footer {
+    padding-top: 0;
+    margin-bottom: 1.5%;
+    margin-top: -1.5%;
+    font-size: 0.6em;
+    color: #fffdd0
+}
