@@ -10,22 +10,29 @@ body {
     background-size: cover;
 }
 
-section div label .btn.btn-secondary {
-    background-color: beige;
-    color: salmon;
-    padding-top: 120px;
+#selector-div {
+    background-color: rgba(0, 41, 0, 0.95);
+    padding-top: 7rem;
+    width: 100%;
+    max-width: 900px;
     margin: auto;
 }
 
-section {
-    background-color: rgba(0, 41, 0, 0.95);
-    width: 98%;
+#selector {
+    margin-left: 2%;
+    font-family: inherit;
     color: #fffdd0;
-    padding: 2%;
+}
+
+.content {
+    background-color: rgba(0, 41, 0, 0.95);
+    width: 100%;
+    max-width: 900px;
+    color: #fffdd0;
+    padding: 4%;
     margin: auto;
     font-family: "Merriweather Sans", sans-serif;
     text-justify: newspaper;
-    padding-top: 120px;
     z-index: 0;
 }
 
@@ -41,6 +48,10 @@ section a {
 section a:hover {
     color: white;
     text-decoration: none;
+}
+
+.accommodation {
+    display: block;
 }
 
 .entry {

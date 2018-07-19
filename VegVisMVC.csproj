@@ -16,6 +16,7 @@
     <None Remove="public\css\main.css" />
     <None Remove="public\images\vv_logo.png" />
     <None Remove="public\css\nav.css" />
+    <None Remove="EmptyJSFile.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Shared\London.cshtml" />
@@ -30,6 +31,8 @@
     <Content Remove="wwwroot\images\london\one_fanthorpe.jpg" />
     <Content Remove="wwwroot\images\london\roseview_hotel.jpg" />
     <Content Remove="wwwroot\images\london\temple_lodge.jpg" />
+    <Content Remove="wwwroot\js\main.js" />
+    <Content Remove="wwwroot\js\EmptyJSFile.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\Regions\Wales.cshtml.cs" />
@@ -45,5 +48,6 @@
     <None Include="wwwroot\images\london\one_fanthorpe.jpg" />
     <None Include="wwwroot\images\london\roseview_hotel.jpg" />
     <None Include="wwwroot\images\london\temple_lodge.jpg" />
+    <None Include="wwwroot\js\main.js" />
   </ItemGroup>
 </Project>

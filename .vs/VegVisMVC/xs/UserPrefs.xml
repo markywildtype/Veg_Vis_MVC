@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{CEBC4240-888A-4F67-9301-7B1829EE15CD}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Data/LondonRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/js/main.js">
     <Files>
+      <File FileName="Views/VegVis/London.cshtml" Line="161" Column="4" />
+      <File FileName="wwwroot/css/main.css" Line="21" Column="21" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="93" Column="8" />
+      <File FileName="wwwroot/js/main.js" Line="28" Column="1" />
       <File FileName="Controllers/VegVisController.cs" Line="36" Column="25" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="12" Column="55" />
-      <File FileName="Views/VegVis/London.cshtml" Line="16" Column="1" />
-      <File FileName="wwwroot/css/main.css" Line="11" Column="2" />
       <File FileName="wwwroot/css/nav.css" Line="31" Column="16" />
-      <File FileName="Data/LondonRepository.cs" Line="1" Column="14" />
-      <File FileName="Models/Entry.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
