@@ -10,24 +10,26 @@ body {
     background-size: cover;
 }
 
+hr {
+    background: #999;
+}
+
 #selector-div {
     background-color: rgba(0, 41, 0, 0.95);
     padding-top: 7rem;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
 #selector {
-    margin-left: 2%;
-    font-family: inherit;
-    color: #fffdd0;
+    margin-left: 4%;
 }
 
 .content {
     background-color: rgba(0, 41, 0, 0.95);
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     color: #fffdd0;
     padding: 4%;
     margin: auto;
@@ -42,24 +44,26 @@ section h2 {
 }
 
 section a {
-    color: #89fc2a;
+    color: green;
 }
 
 section a:hover {
-    color: white;
+    color: lightgreen;
     text-decoration: none;
 }
 
 .accommodation {
     display: block;
+    transition: display 0.5s ease-in-out;
 }
 
 .entry {
-    margin-bottom: 5%;
-}
-
-.multi-line-entry {
-    padding-left: 2%;
+    background-color: #fffdd0;
+    color: rgb(0, 41, 0);
+    margin-bottom: 3%;
+    padding: 2%;
+    border: solid 2px lightgreen;
+    border-radius: 1rem;
 }
 
 .description {
@@ -71,13 +75,15 @@ section a:hover {
     max-width: 483px;
     margin-top: 1%;
     margin-bottom: 3%;
+    border-radius: 0.5rem;
 }
 
 .restaurant-photo {
-    width:100%;
+    width: 100%;
     max-width: 633px;
     margin-top: 1%;
     margin-bottom: 3%;
+    border-radius: 0.5rem;
 }
 
 .region-photo {
